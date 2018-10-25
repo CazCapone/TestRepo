@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JavaGitHubTest/src"/>
+	<classpathentry kind="lib" path="JavaGitHubTest/dist/JavaGitHubTest.jar"/>
+	<classpathentry kind="lib" path="JavaGitHubTest/dist/run195557203/JavaGitHubTest.jar"/>
+	<classpathentry kind="output" path="JavaGitHubTest/build/classes"/>
+</classpath>
