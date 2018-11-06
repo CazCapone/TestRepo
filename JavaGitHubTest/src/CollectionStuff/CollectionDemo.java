@@ -5,6 +5,7 @@
  */
 package CollectionStuff;
 
+import com.sun.prism.paint.Color;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -25,7 +26,7 @@ public class CollectionDemo {
     
     
     public static void main(String[] args){
-        //does not use indexes
+        //does not use indexes so must use Iterator to go thru
         Collection ex = new ArrayList();
         ex.add("a");
         ex.add("b");
@@ -47,12 +48,12 @@ public class CollectionDemo {
         ex3.add("taco");
         System.out.println(ex3);
         
-        //can have duplicate values and uses indexes
+        //ordered list - can have duplicate values and uses indexes
         List<Integer> lex = new ArrayList<>();
         lex.add(5);
         lex.add(7);
         lex.add(2);
-        lex.add(1, 6);  //uses index 
+        lex.add(1, 6);  //uses index to place item @ index 1
         System.out.println("list is " + lex);
         Collections.sort(lex);
         System.out.println("Sorted list is " + lex);
@@ -61,22 +62,27 @@ public class CollectionDemo {
         Collections.shuffle(lex);
         System.out.println("Shuffled list is " + lex);
         
+    /*    
+        lex.stream()
+                .filter(e -> getNumber() == 7)
+                .forEach(e -> System.out.println(lex.get(getName())));
+     */   
         
         for(int i=0 ; i < lex.size() ; i++){
             System.out.println(lex.get(i));
         }
-        //OR
+        //OR for-each loop
         for(Integer i : lex){
             System.out.println(i);
         }
         
-        //No duplicate values
+        //No duplicate values  - SortedSet (Ascending order)
         Set<Integer> sex = new HashSet<>();
         
         //No duplicate values
         Set<Integer> sex2 = new TreeSet<>();
         
-        //uses keys
+        //maps keys to values  - SortedMap (Ascending order)
         Map<Integer, String> m = new HashMap<>();
         
         
